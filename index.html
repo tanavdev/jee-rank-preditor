@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="tailwindcss.js"></script>
+  </head>
+  <body class="select-none">
+    <div class="text-center mt-8">
+      <p class="text-4xl font-bold font-sans text-gray-800">
+        JEE Mains rank predictor
+      </p>
+      <p class="text-red-600 font-bold font-mono text-sm bg-gradient from:red-100 to:blue-100 px-4">
+        MOST ACCURATE JEE MAINS [CATEGORY-WISE] RANK PREDICTIOR
+      </p>
+    </div>
+    <div class="bg-white pt-12 flex justify-center pb-6">
+      <div class="shadow-lg border flex flex-col justify-center bg-white w-fit p-16 rounded-md">
+        <div class="w-fill flex justify-center gap-4">
+        <input
+          type="number"
+          class="
+            border border-4
+            rounded
+            border-blue-200
+            py-1
+            px-3
+            outline-none
+            focus:border-blue-400
+          "
+		  id="input"
+          placeholder="%ile"
+        />
+        <button
+          id="button" class="rounded py-2 text-white px-4 bg-green-500 hover:bg-green-600"
+        >
+          calculate
+        </button>
+        </div>
+        <p class="italic text-gray-400">
+          percentile should be accurate upto 3 decimal
+        </p>
+        <hr class="border-gray-200 mt-4 mb-0" />
+        <a href="http://join-shortest.com/ref/a6149f373e?user-type=new"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/350x19.png?2022-06-29.0" title="Share your links and earn real money" width="350" height="19" /></a>
+        <hr class="border-gray-200 mt-0 mb-4" />
+        <table class="font-mono border rounded">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="border px-3">category</th>
+              <th class="border px-3">rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-3 text-center">general(crl)</td>
+              <td class="px-3 text-center" id="gen">-</td>
+            </tr>
+            <tr>
+              <td class="px-3 text-center">ews</td>
+              <td class="px-3 text-center" id="ews">-</td>
+            </tr>
+            <tr>
+              <td class="px-3 text-center">obc</td>
+              <td class="px-3 text-center" id="obc">-</td>
+            </tr>
+            <tr>
+              <td class="px-3 text-center">sc</td>
+              <td class="px-3 text-center" id="scc">-</td>
+            </tr>
+            <tr>
+              <td class="px-3 text-center">st</td>
+              <td class="px-3 text-center" id="stt">-</td>
+            </tr>
+          </tbody>
+        </table>
+		<p class="text-red-500 w-80">note: this is based on past experiences. 
+			not for 100 percentilers.</p>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
